@@ -1,0 +1,42 @@
+@import url("https://fonts.googleapis.com/css2?family=Marck+Script&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url(../img/schoolboard.png);
+  background-size: cover;
+  background-position: bottom;
+  display: flex;
+  justify-content: center;
+  font-family: "Marck Script", cursive;
+  margin: 0;
+}
+
+.baslik {
+  color: ivory;
+  margin-top: 7rem;
+}
+
+.soru {
+  color: ivory;
+}
+
+.cevap {
+  height: 3rem;
+  width: 5rem;
+  font-size: 3rem;
+  color: ivory;
+}
+
+.baslat,
+.bitir {
+  font-size: 3rem;
+  margin-left: 1rem;
+}
+
+p {
+  color: aliceblue;
+  font-size: 1.5rem;
+}
