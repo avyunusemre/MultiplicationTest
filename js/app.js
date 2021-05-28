@@ -20,8 +20,9 @@ function rastgele() {
 
 baslatBtn.addEventListener("click", () => {
   baslik.innerHTML = "The Multiplication Exam";
+  cevapBox.value = "";
   rastgele();
-  p.style.display = "enable";
+  p.style.display = "block";
   reset();
 });
 
@@ -30,6 +31,7 @@ cevapBox.addEventListener("keyup", (event) => {
     dogrula();
     rastgele();
     cevapBox.value = "";
+    p.style.display = "none";
   }
 });
 
@@ -58,7 +60,7 @@ bitirBtn.addEventListener("click", () => {
   } else {
     baslik.innerHTML = `***You must work!*** Right : ${dogruSayisi}, False : ${yanlisSayisi}`;
   }
-
+  cevapBox.value = "";
   p.style.display = "none";
   reset();
 });
